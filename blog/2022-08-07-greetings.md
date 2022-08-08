@@ -10,6 +10,7 @@ authors:
     title: Docusaurus maintainer
     url: https://sebastienlorber.com
     image_url: https://github.com/slorber.png
+  - hachian
 tags: [greetings]
 ---
 
