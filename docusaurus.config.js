@@ -90,7 +90,7 @@ const config = {
               },
               {
                 label: 'Slides',
-                to: '/slide',
+                to: '/slides',
               },
             ],
           },
