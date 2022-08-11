@@ -3,9 +3,9 @@ import Layout from "@theme/Layout";
 
 export default function MyReactPage() {
   return(
-    <Layout>
-      <h1>My React page</h1>
-      <p>This is a React page</p>
+    <Layout title="About">
+      <h1>About Page</h1>
+      <h2>Aboutを書きます</h2>
     </Layout>
   )
 }
