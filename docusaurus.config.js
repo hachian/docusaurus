@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'ハチアンブログ',
+  tagline: 'なにかかく',
   url: 'https://sage-biscochitos-ac0f4e.netlify.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -57,19 +57,16 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'ハチアンブログ',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/200x200.svg',
         },
         items: [
-          {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Tutorial',
-          },
+          {to: '/about', label: 'About', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/slides', label: 'Slides', position: 'left'},
+          {to: '/youtube', label: 'Youtube', position: 'left'},
           {
             href: 'https://github.com/hachian/docusaurus',
             label: 'GitHub',
@@ -81,25 +78,25 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Contents',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'About',
+                to: '/about',
+              },
+              {
+                label: 'Blog',
+                to: '/blog',
+              },
+              {
+                label: 'Slides',
+                to: '/slide',
               },
             ],
           },
           {
             title: 'Social Accounts',
             items: [
-              // {
-              //   label: 'Stack Overflow',
-              //   href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              // },
-              // {
-              //   label: 'Discord',
-              //   href: 'https://discordapp.com/invite/docusaurus',
-              // },
               {
                 label: 'Twitter',
                 href: 'https://twitter.com/_hachian',
@@ -110,17 +107,21 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
                 label: 'GitHub',
                 href: 'https://github.com/hachian/docusaurus',
+              },
+              {
+                label: 'Youtube',
+                to: '/youtube',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} ハチアンブログ All Rights Reserved`,
+      },
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: true,
       },
       prism: {
         theme: lightCodeTheme,
